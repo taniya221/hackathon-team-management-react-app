@@ -7,7 +7,7 @@ const ViewTeam = () => {
     const [data, changeData] = useState([])
 
     const fetchData = () => {
-        axios.post("http://localhost:4000/view-team").then(
+        axios.post("http://localhost:3000/view-team").then(
             (response) => {
                 changeData(response.data)
             }
@@ -22,7 +22,7 @@ const ViewTeam = () => {
 
     return (
         
-
+   
             <div className="container">
                 <NavigationBar />
     <div className="row">
